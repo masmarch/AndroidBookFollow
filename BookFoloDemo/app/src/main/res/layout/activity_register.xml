@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:id="@+id/drawerLayout"
+    android:background="@drawable/register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="362dp"
+            android:layout_height="550dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:id="@+id/textEmail"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="121dp"
+                android:fontFamily="@font/aldrich"
+                android:text="E-mail:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textUser"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/textEmail"
+                android:layout_marginTop="175dp"
+                android:fontFamily="@font/aldrich"
+                android:text="User name:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textPass"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/textEmail"
+                android:layout_marginTop="230dp"
+                android:fontFamily="@font/aldrich"
+                android:text="Password:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/textEmail"
+                android:layout_marginBottom="247dp"
+                android:fontFamily="@font/aldrich"
+                android:text="Name:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textLName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/textEmail"
+                android:layout_marginBottom="193dp"
+                android:fontFamily="@font/aldrich"
+                android:text="Last-Name:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textSex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/textEmail"
+                android:layout_marginBottom="150dp"
+                android:fontFamily="@font/aldrich"
+                android:text="Sex:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/textEmail"
+                android:layout_marginBottom="95dp"
+                android:fontFamily="@font/aldrich"
+                android:text="BirthDay:"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textEmail"
+                android:layout_toEndOf="@+id/textUser"
+                android:ems="10"
+                android:hint="example456@gmail.com"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textUser"
+                android:layout_toEndOf="@+id/textUser"
+                android:ems="10"
+                android:hint="username"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textPass"
+                android:layout_toEndOf="@+id/textUser"
+                android:ems="10"
+                android:hint="your password"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textName"
+                android:layout_toEndOf="@+id/textUser"
+                android:ems="10"
+                android:hint="name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/lname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textLName"
+                android:layout_toEndOf="@+id/textUser"
+                android:ems="10"
+                android:hint="surname"
+                android:inputType="textPersonName" />
+
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textDay"
+                android:layout_toEndOf="@+id/textUser"
+                android:ems="10"
+                android:hint="dd/mm/yyyy"
+                android:inputType="textPersonName" />
+
+            <RadioGroup
+                android:id="@+id/gender"
+                android:layout_width="167dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textSex"
+                android:layout_toEndOf="@+id/textUser"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btnMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/btnFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female" />
+            </RadioGroup>
+
+            <ImageButton
+                android:id="@+id/btnwallet"
+                android:layout_width="282dp"
+                android:layout_height="41dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                app:srcCompat="@mipmap/connectwallet" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/navigation_menu"
+        android:layout_gravity="start"
+        android:id="@+id/navigation_view">
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

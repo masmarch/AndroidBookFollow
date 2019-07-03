@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HistoryActivity"
+    android:id="@+id/drawerLayout"
+    android:background="@drawable/history">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp">
+        <ScrollView
+            android:layout_width="384dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp">
+            <fragment
+                android:id="@+id/fragment_place"
+                android:name="com.example.adminstator.bookfolodemo.NewFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                tools:layout="@layout/fragment_new">
+            </fragment>
+        </ScrollView>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="109dp">
+        <RelativeLayout
+            android:layout_width="384dp"
+            android:layout_height="485dp"
+            android:layout_marginLeft="14dp">
+
+            <ImageButton
+                android:id="@+id/btnsoon"
+                android:layout_width="127dp"
+                android:layout_height="41dp"
+                android:onClick="ChangeFragment"
+                android:src="@mipmap/soon" />
+
+            <ImageButton
+                android:id="@+id/btnlist"
+                android:layout_width="127dp"
+                android:layout_height="41dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="ChangeFragment"
+                android:src="@mipmap/list" />
+
+            <ImageButton
+                android:id="@+id/btnupload"
+                android:layout_width="127dp"
+                android:layout_height="41dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:onClick="ChangeFragment"
+                android:src="@mipmap/upload" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/navigation_menu"
+        android:layout_gravity="start"
+        android:id="@+id/navigation_view">
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

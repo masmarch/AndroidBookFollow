@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnbook1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@mipmap/book1" />
+
+            <ImageButton
+                android:id="@+id/btnbook2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnbook1"
+                android:scaleType="fitXY"
+                android:src="@mipmap/book2" />
+
+            <ImageButton
+                android:id="@+id/btnbook3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnbook2"
+                android:scaleType="fitXY"
+                android:src="@mipmap/book3" />
+
+            <ImageButton
+                android:id="@+id/btnbook4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnbook3"
+                android:scaleType="fitXY"
+                android:src="@mipmap/book4" />
+
+        </LinearLayout>
+</FrameLayout>

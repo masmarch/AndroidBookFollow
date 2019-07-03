@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SellActivity"
+    android:id="@+id/drawerLayout"
+    android:background="@drawable/sell">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="375dp"
+            android:layout_height="493dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="100dp">
+
+            <TextView
+                android:id="@+id/textbook"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/aldrich"
+                android:text="Book:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textdetail"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/textbook"
+                android:layout_marginTop="125dp"
+                android:fontFamily="@font/aldrich"
+                android:text="Details:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textcate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/textbook"
+                android:layout_marginTop="197dp"
+                android:fontFamily="@font/aldrich"
+                android:text="Category:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/texcur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/textcost2"
+                android:layout_marginEnd="91dp"
+                android:fontFamily="@font/aldrich"
+                android:text="Bath:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textcost2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/textbook"
+                android:layout_marginBottom="199dp"
+                android:fontFamily="@font/aldrich"
+                android:text="Price:"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/textbook"
+                android:layout_marginBottom="124dp"
+                android:fontFamily="@font/aldrich"
+                android:text="Acceptance Agreement"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/txtbook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textbook"
+                android:layout_alignEnd="@+id/btndone"
+                android:ems="10"
+                android:hint="name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/txtdetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textdetail"
+                android:layout_alignEnd="@+id/btndone"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/txtcate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textcate"
+                android:layout_alignEnd="@+id/btndone"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/txtprice"
+                android:layout_width="83dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/texcur"
+                android:layout_alignStart="@+id/txtbook"
+                android:ems="10"
+                android:inputType="number" />
+
+            <ImageButton
+                android:id="@+id/btndone"
+                android:layout_width="103dp"
+                android:layout_height="43dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="22dp"
+                android:layout_marginEnd="24dp"
+                app:srcCompat="@mipmap/done" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/navigation_menu"
+        android:layout_gravity="start"
+        android:id="@+id/navigation_view">
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

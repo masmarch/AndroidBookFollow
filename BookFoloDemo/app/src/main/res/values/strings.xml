@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BookFoloDemo</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string-array name="report1">
+        <item>--SELECT TOPIC--</item>
+        <item>report about a user issue</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pin">PIN</string>
+</resources>

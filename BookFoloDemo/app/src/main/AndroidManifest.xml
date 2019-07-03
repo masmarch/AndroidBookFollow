@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.adminstator.bookfolodemo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".MarketActivity" />
+        <activity android:name=".SellActivity" />
+        <activity android:name=".MystoreActivity" />
+        <activity android:name=".HistoryActivity" />
+        <activity android:name=".DownloadActivity" />
+        <activity android:name=".UploadActivity" />
+        <activity android:name=".ReportActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".ConnectActivity" />
+        <activity android:name=".Book1Activity" />
+        <activity android:name=".Book2Activity" />
+        <activity android:name=".Buy1Activity" />
+        <activity android:name=".Buy2Activity" />
+        <activity android:name=".ThankActivity" />
+        <activity
+            android:name=".ReadActivity"
+            android:parentActivityName=".Book1Activity"></activity>
+        <activity
+            android:name=".Read2Activity"
+            android:parentActivityName=".Book2Activity"></activity>
+    </application>
+
+</manifest>
